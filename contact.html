@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ShopNest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            background: #ff6f61;
+            padding: 20px 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            justify-content: flex-start;
+            border-bottom: 4px solid #ff4d3d;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-image {
+            height: 70px;
+            width:auto;
+            margin-right: 20px;
+        }
+        .header-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+            padding-left: 0;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 20px;
+            }
+            .logo-image {
+                height: 45px;
+                margin-left: 15px;
+            }
+            .header-title {
+                font-size: 1.5rem;
+                padding-left: 0;
+            }
+        }
+    </style>
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f8f8f8; /* Light background color */
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+            }
+
+            nav a {
+                padding: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/5845995190949627408.png" alt="Logo Image" class="logo-image">
+            <span class="header-title">ShopNest</span>
+        </div>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Electronics.html">Electronics</a>
+        <a href="home&kitchen.html">Home & Kitchen</a>
+        <a href="fashion.html">Fashion</a>
+    </nav>
+    <main>
+        <div class="contact-container">
+            <h2>Send Us a Message</h2>
+            <p>If you have any questions, feedback, or concerns, feel free to reach out to us using the form below. We'd love to hear from you!</p>
+            
+            <form class="contact-form" action="submit_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Enter message subject">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: <a href="mailto:support@shopnest.com">support@shopnest.com</a></p>
+                <p>Phone: <a href="tel:+256728839749">+256 728 839 749</a></p>
+                <p>Address: 123 Shopping Street, Kampala, Uganda</p>
+                <p>Business Hours: Monday - Friday, 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+    </main>
+    <footer>&copy; 2025 Shop Nest</footer>
+</body>
+</html>

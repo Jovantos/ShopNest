@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            background: #ff6f61;
+            padding: 20px 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            justify-content: flex-start;
+            border-bottom: 4px solid #ff4d3d;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-image {
+            height: 70px;
+            width:auto;
+            margin-right: 20px;
+        }
+        .header-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+            padding-left: 0;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 20px;
+            }
+            .logo-image {
+                height: 45px;
+                margin-left: 15px;
+            }
+            .header-title {
+                font-size: 1.5rem;
+                padding-left: 0;
+            }
+        }
+        .product-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .category-item {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 6px 24px rgba(52,73,94,0.10);
+            width: 320px;
+            padding: 28px 18px 22px 18px;
+            text-align: center;
+            transition: transform 0.4s cubic-bezier(.25,.8,.25,1), box-shadow 0.4s cubic-bezier(.25,.8,.25,1);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1s both;
+        }
+        .category-item:hover {
+            transform: translateY(-12px) scale(1.04) rotate(-1deg);
+            box-shadow: 0 12px 32px rgba(255,111,97,0.15);
+        }
+        .category-image {
+            width: 180px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 18px;
+            box-shadow: 0 2px 12px rgba(255,221,89,0.10);
+            transition: box-shadow 0.3s, transform 0.3s;
+            animation: popIn 1.2s cubic-bezier(.25,.8,.25,1);
+        }
+        .category-item:hover .category-image {
+            box-shadow: 0 6px 24px rgba(255,111,97,0.18);
+            transform: scale(1.07) rotate(2deg);
+        }
+        .category-item h3 {
+            color: #ff6f61;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+        .category-item p {
+            color: #555;
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes popIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.7);
+            }
+            80% {
+                opacity: 1;
+                transform: scale(1.08);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        .featured-video {
+            margin: 60px auto 30px auto;
+            max-width: 700px;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(52,73,94,0.08);
+            padding: 32px 24px;
+            text-align: center;
+            animation: fadeInUp 1.2s 0.3s both;
+        }
+        .featured-video h2 {
+            color: #ff6f61;
+            margin-bottom: 12px;
+        }
+        .featured-video p {
+            color: #555;
+            margin-bottom: 18px;
+        }
+        .featured-video video {
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(52,73,94,0.10);
+            width: 100%;
+            max-width: 600px;
+            outline: none;
+        }
+        @media (max-width: 900px) {
+            .product-categories {
+                flex-direction: column;
+                align-items: center;
+            }
+            .category-item {
+                width: 90%;
+            }
+        }
+    </style>
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f8f8f8; /* Light background color */
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+            }
+
+            nav a {
+                padding: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/5845995190949627408.png" alt="Logo Image" class="logo-image">
+            <span class="header-title">ShopNest</span>
+        </div>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Electronics.html">Electronics</a>
+        <a href="home&kitchen.html">Home & Kitchen</a>
+        <a href="fashion.html">Fashion</a>
+    </nav>
+    <main>
+        <h2 class="fade" style="text-align:center; color:#ff6f61; margin-top:30px;">Product Categories</h2>
+        <p style="text-align:center; color:#555; max-width:700px; margin:0 auto 30px auto;">
+            Explore our diverse range of products, carefully curated to meet your needs. From everyday essentials to premium items, we have something for everyone.
+        </p>
+        <section class="product-categories">
+            <div class="category-item">
+                <a href="electronics.html">
+                    <img src="images/category1.jpg" alt="Electronics" class="category-image">
+                </a>
+                <h3>Electronics</h3>
+                <p>Find the latest in technology, from smartphones to smart home devices.</p>
+                <p>Discover the latest gadgets and devices to make your life easier and more enjoyable.</p>
+            </div>
+            <div class="category-item">
+                <a href="home&kitchen.html">
+                    <img src="images/category2.jpg" alt="Home & Kitchen" class="category-image">
+                </a>
+                <h3>Home & Kitchen</h3>
+                <p>Transform your living space with our selection of home decor and kitchen essentials.</p>
+                <p>Upgrade your home with our range of stylish and functional products.</p>
+            </div>
+            <div class="category-item">
+                <a href="fashion.html">
+                    <img src="images/category3.jpg" alt="Fashion" class="category-image">
+                </a>
+                <h3>Fashion</h3>
+                <p>Stay trendy with our collection of clothing and accessories for all occasions.</p>
+            </div>
+        </section>
+        <section class="featured-video">
+            <h2>Product Spotlight</h2>
+            <p class="about">Watch our featured video to learn more about our best-selling products and how they can enhance your lifestyle.</p>
+            <video controls>
+                <source src="images/spotlight.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion - ShopNest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url('https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 1rem;
+        }
+
+        .logo {
+            color: white;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        .fashion-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .fashion-header {
+            text-align: center;
+            margin-bottom: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .fashion-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        .fashion-header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .fashion-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .fashion-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .fashion-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .fashion-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .fashion-item h3 {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .fashion-item p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .fashion-item .price {
+            color: #ff6f61;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .buy-btn:hover {
+            background: #ff4d3d;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/5845995190949627408.png" alt="Logo Image" class="logo-image">
+            <span class="header-title">ShopNest</span>
+        </div>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Electronics.html">Electronics</a>
+        <a href="home&kitchen.html">Home & Kitchen</a>
+        <a href="fashion.html">Fashion</a>
+    </nav>
+
+    <div class="fashion-container">
+        <div class="fashion-header">
+            <h1>Fashion Collection</h1>
+            <p>Discover the latest trends in fashion. From casual wear to formal attire, find your perfect style with our curated collection of clothing and accessories.</p>
+        </div>
+
+        <div class="fashion-grid">
+            <div class="fashion-item">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f" alt="Summer Dress">
+                <h3>Summer Dress</h3>
+                <p>Light and comfortable floral print dress.</p>
+                <div class="price">UGX 85,000</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="fashion-item">
+                <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3" alt="Men's Casual Shirt">
+                <h3>Men's Casual Shirt</h3>
+                <p>Classic fit cotton shirt for everyday wear.</p>
+                <div class="price">UGX 65,000</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="fashion-item">
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3" alt="Designer Handbag">
+                <h3>Designer Handbag</h3>
+                <p>Elegant leather handbag with multiple compartments.</p>
+                <div class="price">UGX 250,000</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="fashion-item">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Running Shoes">
+                <h3>Running Shoes</h3>
+                <p>Lightweight and breathable athletic shoes.</p>
+                <div class="price">UGX 180,000</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="fashion-item">
+                <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5" alt="Winter Jacket">
+                <h3>Winter Jacket</h3>
+                <p>Warm and stylish winter coat with hood.</p>
+                <div class="price">UGX 320,000</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="fashion-item">
+                <img src="https://images.unsplash.com/photo-1542272604-787c3835535d" alt="Denim Jeans">
+                <h3>Denim Jeans</h3>
+                <p>Classic fit jeans with modern styling.</p>
+                <div class="price">UGX 95,000</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>&copy; 2025 Shop Nest</footer>
+</body>
+</html>

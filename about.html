@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ShopNest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        header {
+            display: flex;
+            align-items: center;
+            background: #ff6f61;
+            padding: 20px 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            justify-content: flex-start;
+            border-bottom: 4px solid #ff4d3d;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-image {
+            height: 70px;
+            width:auto;
+            margin-right: 20px;
+        }
+        .header-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+            padding-left: 0;
+        }
+        @media (max-width: 600px) {
+            header {
+                padding: 15px 20px;
+            }
+            .logo-image {
+                height: 45px;
+                margin-left: 15px;
+            }
+            .header-title {
+                font-size: 1.5rem;
+                padding-left: 0;
+            }
+        }
+    </style>
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f8f8f8; /* Light background color */
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+            }
+
+            nav a {
+                padding: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/5845995190949627408.png" alt="Logo Image" class="logo-image">
+            <span class="header-title">ShopNest</span>
+        </div>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="Electronics.html">Electronics</a>
+        <a href="home&kitchen.html">Home & Kitchen</a>
+        <a href="fashion.html">Fashion</a>
+    </nav>
+    <div class="about-container">
+        <h2>Our Story</h2>
+        <p>Welcome to Shop Nest, your one-stop destination for quality products and exceptional service. Founded in 2020, we started with a simple mission: to make shopping convenient, affordable, and enjoyable for everyone.</p>
+        <p>Our journey began with a small team of passionate individuals who believed in the power of innovation and customer satisfaction. Over the years, we have grown into a trusted brand, offering a wide range of products to meet your everyday needs.</p>
+        
+        <div class="about-stats">
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years of Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10k+</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1000+</div>
+                <div class="stat-label">Products</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Customer Support</div>
+            </div>
+        </div>
+
+        <h3>Our Mission</h3>
+        <p>At Shop Nest, our mission is to deliver value to our customers by providing high-quality products, seamless shopping experiences, and outstanding customer support. We are committed to sustainability and strive to make a positive impact on the community and the environment.</p>
+        
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li>Wide selection of products across multiple categories</li>
+            <li>Competitive prices and regular discounts</li>
+            <li>Fast and reliable shipping nationwide</li>
+            <li>Dedicated 24/7 customer support</li>
+            <li>Secure payment options</li>
+            <li>Easy returns and refunds</li>
+        </ul>
+
+        <h3>Our Values</h3>
+        <p>We believe in:</p>
+        <ul>
+            <li>Customer satisfaction above all</li>
+            <li>Quality in every product we offer</li>
+            <li>Innovation in our services</li>
+            <li>Environmental responsibility</li>
+            <li>Community engagement</li>
+        </ul>
+    </div>
+    <footer>&copy; 2025 Shop Nest</footer>
+</body>
+</html>
